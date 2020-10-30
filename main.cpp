@@ -15,9 +15,11 @@
     int Min(int, int, int);
     int Sum(int, int, int);
     int Middle(int, int, int);
-//  =======================
+//  ==========================
 
-//  ============
+//  ===========================
+//  This is the Function main()
+//  ===========================
     int main() {
 
         int a, b, c;
@@ -28,11 +30,15 @@
         cout << endl;
 
     do {
-        a = GetInt();
-        b = GetInt();
-        c = GetInt();
-
         cout << endl;
+        
+        cout << "Enter three integer values please ==> ";
+
+        a = GetInt();
+
+        b = GetInt();
+
+        c = GetInt();
 
         cout << "The minimum value is " << Min(a, b, c) << endl;
 
@@ -44,7 +50,6 @@
 
         cout << endl;
 
-
         cout << "Would you like to go again? (y/n)? ";
         cin >> desire;
         cout << endl;
@@ -52,6 +57,9 @@
     } while (desire == 'y');
     cout << endl;
 
+//  Derkacht
+    if (desire == 'n')
+        cout << "I am finished." << endl;
         
     return 0;
     } // Function main()
@@ -62,7 +70,9 @@
 
         int intValue;
 
-        cout << "Enter three integer values please ==> ";
+//      Derkacht
+//      cout << "Enter three integer values please ==> ";
+//      cout << "Enter an integer value please ==> ";
         cin >> intValue;
 
         return intValue;
