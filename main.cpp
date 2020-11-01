@@ -124,7 +124,7 @@
 //  =======================================
     int Middle(int numA, int numB, int numC) {   
 
-//        int middle;
+//      int middle;
 
 //      middle = Sum(numA, numB, numC) - Max(numA, numB, numC) - Min(numA, numB, numC);
 
