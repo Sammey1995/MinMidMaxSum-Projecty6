@@ -86,16 +86,16 @@
             return numA;
         else
             return numB;
-    }  // Function Max()
-//  ====================
+    }  // Function Max(int, int)
+//  ============================
 
 //  =======================================
     int Max(int numA, int numB, int numC) {
 
         return Max(Max(numA, numB), Max(numB, numC));
 
-    } // Function Max()
-//  ===================
+    } // Function Max(int, int, int)
+//  ================================
 
 //  =============================
     int Min(int numA, int numB) {
@@ -121,13 +121,9 @@
     } // Function Sum()
 //  ===================
 
-//  =======================================
+//  ==========================================
     int Middle(int numA, int numB, int numC) {   
 
-//      int middle;
-
-//      middle = Sum(numA, numB, numC) - Max(numA, numB, numC) - Min(numA, numB, numC);
-
         return Sum(numA, numB, numC) - Max(numA, numB, numC) - Min(numA, numB, numC);
-    } // Function Sum()
-//  ===================
+    } // Function Middle()
+//  ======================
